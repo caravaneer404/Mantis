@@ -33,7 +33,6 @@ public class CGAngle: NSObject, Comparable {
         self.radians = degrees / 180.0 * CGFloat.pi
     }
 
-    
     override public var description: String {
         return String(format: "%0.2f°", degrees)
     }
@@ -62,7 +61,4 @@ public class CGAngle: NSObject, Comparable {
         }
         return CGAngle(radians: lhs.radians / rhs.radians)
     }
-
 }
-
-
